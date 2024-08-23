@@ -10,6 +10,9 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/',(req,res)=>{
+res.send("HOME !")
+})
 app.use('/api', schoolRoutes);
 
 
